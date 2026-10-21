@@ -1,0 +1,48 @@
+{
+  "source": "https://wordpress.org/",
+  "retrievedAt": "2026-10-07T22:15:16.866047+00:00",
+  "bodySha256": "5d91472cdaa359bb1e590da205b05789e09bbf05ea651d71099d092c7debf8e1",
+  "selector": "footer.global-footer.wp-block-wporg-global-footer ul.wp-block-social-links",
+  "profiles": [
+    {
+      "label": "X",
+      "url": "https://www.x.com/WordPress"
+    },
+    {
+      "label": "Bluesky",
+      "url": "https://bsky.app/profile/wordpress.org"
+    },
+    {
+      "label": "Mastodon",
+      "url": "https://mastodon.world/@WordPress"
+    },
+    {
+      "label": "Threads",
+      "url": "https://www.threads.net/@wordpress"
+    },
+    {
+      "label": "Facebook",
+      "url": "https://www.facebook.com/WordPress/"
+    },
+    {
+      "label": "Instagram",
+      "url": "https://www.instagram.com/wordpress/"
+    },
+    {
+      "label": "LinkedIn",
+      "url": "https://www.linkedin.com/company/wordpress"
+    },
+    {
+      "label": "TikTok",
+      "url": "https://www.tiktok.com/@wordpress"
+    },
+    {
+      "label": "YouTube",
+      "url": "https://www.youtube.com/wordpress"
+    },
+    {
+      "label": "Tumblr",
+      "url": "https://wordpress.tumblr.com/"
+    }
+  ]
+}

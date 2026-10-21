@@ -1,0 +1,43 @@
+{
+  "$schema": "https://spacefast.com/schemas/sf.json",
+  "index": "index.html",
+  "fallback": {
+    "path": "/404.html",
+    "status": 404
+  },
+  "cleanUrls": true,
+  "listing": false,
+  "meta": {
+    "title": "Open Website Alliance",
+    "description": "A community of communities.",
+    "favicon": "/images/logos/OWA%20logo.png"
+  },
+  "theme": {
+    "accent": "#294A70",
+    "background": "#F5F7FA",
+    "name": "Open Website Alliance"
+  },
+  "superpowers": {
+    "enabled": false,
+    "disable_all_injection": true
+  },
+  "headers": [
+    {
+      "source": "/*",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, nofollow"
+        },
+        {
+          "key": "Referrer-Policy",
+          "value": "no-referrer"
+        },
+        {
+          "key": "X-Content-Type-Options",
+          "value": "nosniff"
+        }
+      ]
+    }
+  ]
+}

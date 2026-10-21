@@ -1,0 +1,104 @@
+[
+  {
+    "member": "Drupal",
+    "light": "drupal.svg",
+    "lightSha256": "4fdf0ed9207289c70c0ce256a74b5ae66da8c6adb71521c27d8eda26ff7c0aa7",
+    "dark": "drupal-dark.svg",
+    "darkSha256": "05664bc8dfb495d6fa55f07d4130558bd5f0c527e6511c42f521c0db6dd2e26c",
+    "upstreamSha256": "05664bc8dfb495d6fa55f07d4130558bd5f0c527e6511c42f521c0db6dd2e26c",
+    "sources": [
+      "https://www.drupal.org/blog/new-drupal-brand-ready-for-drupal-9-launch",
+      "https://www.drupal.org/about/media-kit/logos",
+      "https://www.drupal.org/about/media-kit/logo-wordmark-guidelines"
+    ],
+    "downloadUrl": "https://www.drupal.org/files/Drupal-Logos_0.zip",
+    "archiveMember": "Drupal Logo Library/RGB/Wordmark/Wordmark_white_RGB.svg",
+    "modifications": [],
+    "decision": "Official 2020 evergreen horizontal lockup, all white, from the Drupal launch article ZIP. Same evergreen symbol plus Drupal TM layout as the current asset, not the Association logo. Current brand portal advertises reversed white variants; portal rendering was blocked by browser timeout. No unsupported blue-symbol/white-type hybrid invented.",
+    "rights": {
+      "owner": "Dries Buytaert",
+      "policy": "https://www.drupal.org/about/trademark",
+      "guidance": "Retain TM and proportions. Brand assets are trademark material, not blanket GPL logo permission. Confirm the alliance context remains covered by its existing permissions."
+    }
+  },
+  {
+    "member": "Joomla!",
+    "light": "joomla.svg",
+    "lightSha256": "d33891fc308d151549d9a7353ca113cd46d2bad8fbdf8cc6e301ae49b134e9bc",
+    "dark": "joomla-dark.svg",
+    "darkSha256": "15bd93628469084d5ffe34ef8554edd0ea01850f26868f82a8887d10185d28f1",
+    "upstreamSha256": "15bd93628469084d5ffe34ef8554edd0ea01850f26868f82a8887d10185d28f1",
+    "sources": [
+      "https://tm.joomla.org/brand-manual-and-limited-use-logos.html",
+      "https://www.joomla.org/component/content/article.html?id=259:logo-usage-and-brand-guide"
+    ],
+    "downloadUrl": "https://cdn.joomla.org/images/joomla-colours-logo.svg",
+    "archiveMember": null,
+    "modifications": [],
+    "decision": "Official CDN SVG embedded by the Joomla logo guide and trademark site: four native symbol colors plus white horizontal Joomla! lettering. Official trademark guide also illustrates full-color horizontal dark-background use. NOT an exact geometric replacement: current asset includes a registered symbol and smaller icon; this official site lockup has no visible registered symbol and a larger icon relative to the wordmark. Use only if this official lockup variation is acceptable; do not edit it to match. Its download folder redirected to sign-in; no credentials used.",
+    "rights": {
+      "owner": "Open Source Matters, Inc.",
+      "policy": "https://tm.joomla.org/trademark-policy.html",
+      "guidance": "Full official logo is a Limited Use Logo. Existing permission must be confirmed; acquisition does not establish permission. Do not alter size/position relationships or imply unapproved endorsement."
+    }
+  },
+  {
+    "member": "TYPO3",
+    "light": "typo3.svg",
+    "lightSha256": "22d2ce9a33bc31acc8cc02ec8a17a878e66204cc6795246f95df0c16f8661b94",
+    "dark": "typo3-dark.svg",
+    "darkSha256": "55683e40cad41e22a75ae0ce822daa19e91b89dc6b90f3bbb981284cbc093f86",
+    "upstreamSha256": "55683e40cad41e22a75ae0ce822daa19e91b89dc6b90f3bbb981284cbc093f86",
+    "sources": [
+      "https://typo3.com/typo3-cms/the-brand/brand-guidelines"
+    ],
+    "downloadUrl": "https://typo3.com/_assets/d1e01514e4c4a5b3147940fa2ec50682/Images/LogoWhite.svg?1791366674",
+    "archiveMember": null,
+    "modifications": [],
+    "decision": "Recommended official brand-guidelines-page footer SVG retains #ff8700 symbol plus white lettering. The downloadable brand ZIP separately offers an all-white inverted logo; preserve that as an explicit alternative, not a fabricated recoloring. Site SVG is slightly different in geometry/rounding from current source; keep its native viewBox.",
+    "rights": {
+      "owner": "TYPO3 Association",
+      "policy": "https://typo3.com/typo3-cms/the-brand/trademarks",
+      "guidance": "Keep figurative mark with wordmark; clear space is half logo height (2x, x = quarter logo height). No unauthorized endorsement implication."
+    }
+  },
+  {
+    "member": "WordPress",
+    "light": "wordpress.svg",
+    "lightSha256": "383c330d60632ac917a4e2b50c1e7542a783554820b5400188d591e18b7ecf95",
+    "dark": "wordpress-dark.png",
+    "darkSha256": "568f3facea8fc1e31144d5b4bc730cd67e525a03ba0925eee20ae0b19a490889",
+    "upstreamSha256": "7eb2ca4882ca7c5585ce27e495a68013985fb2a6910366dff6cdbc01183104e3",
+    "sources": [
+      "https://wordpress.org/about/logos/",
+      "https://make.wordpress.org/design/handbook/design-guide/foundations/identity/"
+    ],
+    "downloadUrl": "https://s.w.org/style/images/about/WordPress-logotype-standard-white.png",
+    "archiveMember": null,
+    "modifications": [
+      {
+        "operation": "Lossless removal of fully transparent outer canvas only; painted RGBA pixels unchanged; CSS reinstates at least half-mark-height clear space.",
+        "originalDimensions": [
+          2000,
+          680
+        ],
+        "cropBox": [
+          169,
+          169,
+          1832,
+          509
+        ],
+        "outputDimensions": [
+          1663,
+          340
+        ]
+      }
+    ],
+    "decision": "Official standard horizontal all-white transparent PNG, linked explicitly as White/transparent from the official logos page. No ready-to-use white SVG is linked there. Retain the official painted pixels rather than tracing or recoloring. The local derivative removes only fully transparent outer canvas, as recorded above; CSS reinstates at least half-mark-height clear space and keeps visible weight comparable.",
+    "rights": {
+      "owner": "WordPress Foundation",
+      "policy": "https://wordpressfoundation.org/trademark-policy/",
+      "guidance": "Use correct standard W and native proportions. Identity handbook specifies half-W safety margin. Logo is subject to trademark policy, not automatically reusable merely because WordPress software is GPL."
+    }
+  }
+]

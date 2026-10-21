@@ -1,0 +1,154 @@
+[
+  {
+    "newsId": "wordpress-presidency-2026",
+    "dateType": "primary source publication date",
+    "sourceRecords": [
+      {
+        "url": "https://wordpress.org/news/2026/09/owa-president/",
+        "headline": "WordPress Takes Its Turn Leading the Open Website Alliance",
+        "publication_date": "2026-09-21",
+        "raw_body_sha256": "6fed5c6c4b0c332a3ffa2fb35a6548ac2117beae068f6a22f80e8cc9ff217af1",
+        "evidence_passages": [
+          "September 21, 2026",
+          "I’m happy to announce that I am now serving as president of the\nOpen Website Alliance\n(OWA), representing the WordPress Foundation. The Alliance brings together the community organizations behind\nDrupal\n,\nJoomla!\n,\nTYPO3\n, and WordPress to advocate for open source and share practices that benefit their projects. I represent the WordPress Foundation in this role, which rotates among the Alliance’s members."
+        ]
+      }
+    ]
+  },
+  {
+    "newsId": "fair-typo3-collaboration-2026",
+    "dateType": "primary source publication date",
+    "sourceRecords": [
+      {
+        "url": "https://news.typo3.com/article/typo3-returns-to-cloudfest-2026",
+        "headline": "TYPO3 Returns to CloudFest 2026",
+        "publication_date": "2026-03-09",
+        "raw_body_sha256": "95a051e6697de0ae2053208af2bfc3e82570910824463227261cf8eb3ce31b26",
+        "evidence_passages": [
+          "09 March 2026",
+          "From March 20 to 22 at the CloudFest Hackathon 2026 in Rust, TYPO3 developers will collaborate with other open-source contributors to implement Benni Mack’s proposal. This session aims to expand FAIR protocol support into the TYPO3 ecosystem and beyond its initial WordPress roots. For TYPO3, this is a natural extension of its work within the Open Website Alliance: preparing the technical foundations of its ecosystem for the regulatory and architectural demands ahead.",
+          "While the proposal was not among the four ideas funded in Community Budget Round One, it points to a clear strategic direction. One that the CloudFest Hackathon 2026 offers an ideal setting to advance."
+        ]
+      }
+    ]
+  },
+  {
+    "newsId": "cra-readiness-workshop-2025",
+    "dateType": "primary source publication date",
+    "sourceRecords": [
+      {
+        "url": "https://magazine.joomla.org/issues/2025/november-2025/cyber-resilience-act-workshop-2025-the-five-w",
+        "headline": "Cyber Resilience Act Workshop 2025. The five W’s!",
+        "publication_date": "2025-11-20",
+        "raw_body_sha256": "acd5ca01a8a52cfd0c6c8a2f9021a01a546b30d619c55833707689bbb3f2749b",
+        "evidence_passages": [
+          "Published: 20 November 2025",
+          "Back in October, three representatives from Joomla! attended the Cyber Resilience Act workshop organised by the Open Website Alliance. Let’s begin with who.",
+          "The president is our very own Maria Skampoura, the president of OSM.",
+          "When\nOctober 10th, 2025\nWhere\nHTL Rennweg, Vienna. This is a technical school who kindly hosted us.",
+          "The workshop was delivered by Hans de Raad of OpenNovations who is an expert in the field of compliance."
+        ]
+      }
+    ]
+  },
+  {
+    "newsId": "typo3-presidency-2025",
+    "dateType": "primary source publication date",
+    "sourceRecords": [
+      {
+        "url": "https://news.typo3.com/article/typo3-president-leads-open-website-alliance",
+        "headline": "At the Helm: TYPO3 President Leads the Open Website Alliance",
+        "publication_date": "2025-06-03",
+        "raw_body_sha256": "603ebdcceb6c4597277e2a43c2e245f540264e05e4faef3091ba94add7b8d100",
+        "evidence_passages": [
+          "03 June 2025",
+          "In February 2025, TYPO3 Association President Olivier Dobberkau was appointed President of the Open Website Alliance (OWA). The term rotates between the alliance members, and TYPO3 is currently leading the alliance during its six-month presidency.",
+          "Olivier has a clear vision of his role and the remainder of his term. He monitors the Cyber Resilience Act (CRA) while assessing TYPO3’s position. He believes its impact should be shared with the community."
+        ]
+      }
+    ]
+  },
+  {
+    "newsId": "alliance-founded-2024",
+    "dateType": "primary source publication date",
+    "sourceRecords": [
+      {
+        "url": "https://www.drupal.org/association/blog/drupal-association-co-founds-the-open-website-alliance",
+        "headline": "Drupal Association Co-Founds the Open Website Alliance",
+        "publication_date": "2024-02-05",
+        "raw_body_sha256": "b9b1debfe212e4408e3fab8d13d259338c06f18cc074a8153afb1041b7b457a7",
+        "evidence_passages": [
+          "5 February 2024",
+          "The international community organizations behind Drupal, Joomla, TYPO3, and WordPress join forces in a leadership-level alliance. The members of the Alliance are united in their shared values and their message to decision-makers to always choose open source software over proprietary systems.",
+          "The organization’s leadership is also based on collaboration. The presidency rotates among the members, and all decisions are consensus-based."
+        ]
+      },
+      {
+        "url": "https://www.joomla.org/announcements/general-news/joomla-joins-forces-in-the-open-website-alliance.html",
+        "headline": "Joomla! Joins Forces in the Open Website Alliance",
+        "publication_date": "2024-02-05",
+        "raw_body_sha256": "cddf01ea8bc4e50c14a759daba885a817978b45a5141ef26bedda8ed47f62bca",
+        "evidence_passages": [
+          "Created: 05 February 2024",
+          "In an unprecedented move, Joomla, alongside other leading open-source content management systems including Drupal, TYPO3, and WordPress, has proudly co-founded the Open Website Alliance."
+        ]
+      },
+      {
+        "url": "https://cmscritic.com/drupal-joomla-typo3-and-wordpress-join-forces-in-new-open-website-alliance",
+        "headline": "Drupal, Joomla, TYPO3, and WordPress Join Forces in New Open Website Alliance",
+        "publication_date": "2024-02-12",
+        "raw_body_sha256": "fd8501b3e9a2400cf1a24a5f223a60bf3275acbf7fd4e93ad93ca99eb42e154b",
+        "evidence_passages": [
+          "“The Open Website Alliance started out with this letter to the EU,” Mathias said. “We weren't an alliance six months ago, but that was really when Drupal, Joomla, TYPO3, and WordPress got together at a leadership level to do something together. Because we shared a concern – and we had shared values. Of course, there's been collaborations between our communities previously, but this was really the first time that we met on a leadership level – board members and executives, meeting together on one call."
+        ]
+      },
+      {
+        "url": "https://wptavern.com/eu-regulatory-success-prompts-open-source-cms-leaders-to-form-alliance",
+        "headline": "EU Regulatory Success Prompts Open-Source CMS Leaders to Form Alliance",
+        "publication_date": "2024-02-16",
+        "raw_body_sha256": "2c4f642217ae0d29a421c2809adcb5dc485636da09db88836d2c70f7d20e5fca",
+        "evidence_passages": [
+          "February 16, 2024",
+          "In an\nopen letter to EU legislators in July 2023\n, the leaders of WordPress, Drupal, Joomla, and TYPO3 highlighted the risks to open-source and began a collaborative effort called the Inter-CMS Working Group to bring about significant change to the wording proposed in the CRA.",
+          "With the success of amending the CRA as a foundation to build on, the four open-source communities represented in the Inter-CMS Working Group recently\nestablished the Open Web Alliance\n."
+        ]
+      }
+    ]
+  },
+  {
+    "newsId": "joint-cra-letter-2023",
+    "dateType": "primary source publication date",
+    "sourceRecords": [
+      {
+        "url": "https://www.joomla.org/announcements/general-news/open-letter-foss-cms-cyber-resilience-act.html",
+        "headline": "Open Letter on the Significance of Free and Open Source Software in the EU’s Proposed Cyber Resilience Act",
+        "publication_date": "2023-07-25",
+        "raw_body_sha256": "7b0ae93e86057cdaab642520e3eab24226cc51f861296c06678054a24f99af24",
+        "evidence_passages": [
+          "Created: 25 July 2023",
+          "As representatives of leading Free and Open Source Software (FOSS) Content Management System (CMS) communities in Europe and around the world, we commend the goal of enhanced security and quality of European hardware and software through the Cyber Resilience Act (CRA).\nHowever, in their current form, the proposed regulations run the risk of reducing software security, as well as undermining the EU’s core aims and values,\nas we explain below."
+        ]
+      },
+      {
+        "url": "https://news.typo3.com/press-releases/open-letter-to-eu-legislators",
+        "headline": "TYPO3 and Fellow CMS Projects Warn of Adverse Effects of European Union Legislation",
+        "publication_date": "2023-07-25",
+        "raw_body_sha256": "1f6fffabd346e1e67c8045dd63bd9f757bf60cc7d72dd5b74300c36a8508e230",
+        "evidence_passages": [
+          "Baar ZG, Switzerland, 25 July 2023",
+          "Free and open source content management platforms Drupal, Joomla, TYPO3, and WordPress serve more than half of all EU websites. Together, they commend the EU’s goal of enhanced software security and quality, but warn that the proposed Cyber Resilience Act could bring contrary results by undermining the European economy’s competitiveness and the Union’s core aims and values."
+        ]
+      },
+      {
+        "url": "https://wordpress.org/news/2023/08/concerns-over-the-european-unions-cyber-resilience-act-cra/",
+        "headline": "Concerns over the European Union’s Cyber Resilience Act (CRA)",
+        "publication_date": "2023-08-02",
+        "raw_body_sha256": "642527097824e7fd6152ed3fa50ac126990b79603da9e5c88558ce036213586f",
+        "evidence_passages": [
+          "August 2, 2023",
+          "We have jointly authored an open letter addressing these concerns alongside fellow open source projects Drupal, Joomla!, and TYPO3"
+        ]
+      }
+    ]
+  }
+]

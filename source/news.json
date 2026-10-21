@@ -1,0 +1,94 @@
+[
+  {
+    "id": "wordpress-presidency-2026",
+    "date": "2026-09-21",
+    "title": "Mary Hubbard takes the Alliance presidency",
+    "summary": "Mary Hubbard announces her presidency of the Open Website Alliance, representing the WordPress Foundation in the role that rotates among members.",
+    "sources": [
+      {
+        "publisher": "WordPress News",
+        "url": "https://wordpress.org/news/2026/09/owa-president/"
+      }
+    ]
+  },
+  {
+    "id": "fair-typo3-collaboration-2026",
+    "date": "2026-03-09",
+    "title": "TYPO3 outlines FAIR collaboration at CloudFest",
+    "summary": "Ahead of CloudFest, TYPO3 outlined plans to work with other open-source contributors on FAIR protocol support, connecting the proposal to its work within the Alliance.",
+    "sources": [
+      {
+        "publisher": "TYPO3 News",
+        "url": "https://news.typo3.com/article/typo3-returns-to-cloudfest-2026"
+      }
+    ]
+  },
+  {
+    "id": "cra-readiness-workshop-2025",
+    "date": "2025-11-20",
+    "title": "CMS communities meet on the Cyber Resilience Act",
+    "summary": "Joomla reports on the Alliance’s October 10, 2025 workshop in Vienna, where CMS representatives came together to discuss the Cyber Resilience Act.",
+    "sources": [
+      {
+        "publisher": "Joomla Community Magazine",
+        "url": "https://magazine.joomla.org/issues/2025/november-2025/cyber-resilience-act-workshop-2025-the-five-w"
+      }
+    ]
+  },
+  {
+    "id": "typo3-presidency-2025",
+    "date": "2025-06-03",
+    "title": "TYPO3’s turn in the rotating presidency",
+    "summary": "TYPO3 looks at Olivier Dobberkau’s presidency, which began in February 2025, and the cross-community collaboration and regulatory work on his agenda.",
+    "sources": [
+      {
+        "publisher": "TYPO3 News",
+        "url": "https://news.typo3.com/article/typo3-president-leads-open-website-alliance"
+      }
+    ]
+  },
+  {
+    "id": "alliance-founded-2024",
+    "date": "2024-02-05",
+    "title": "The Open Website Alliance is announced",
+    "summary": "The community organizations behind Drupal, Joomla, TYPO3 and WordPress announce an alliance to promote open-source software and collaborate across their projects.",
+    "sources": [
+      {
+        "publisher": "Drupal Association",
+        "url": "https://www.drupal.org/association/blog/drupal-association-co-founds-the-open-website-alliance"
+      },
+      {
+        "publisher": "Joomla!",
+        "url": "https://www.joomla.org/announcements/general-news/joomla-joins-forces-in-the-open-website-alliance.html"
+      },
+      {
+        "publisher": "CMS Critic",
+        "url": "https://cmscritic.com/drupal-joomla-typo3-and-wordpress-join-forces-in-new-open-website-alliance"
+      },
+      {
+        "publisher": "WP Tavern",
+        "url": "https://wptavern.com/eu-regulatory-success-prompts-open-source-cms-leaders-to-form-alliance"
+      }
+    ]
+  },
+  {
+    "id": "joint-cra-letter-2023",
+    "date": "2023-07-25",
+    "title": "Before the Alliance: a joint letter to EU legislators",
+    "summary": "Drupal, Joomla, TYPO3 and WordPress jointly raise concerns about the proposed Cyber Resilience Act. This collaboration preceded the Alliance’s formation.",
+    "sources": [
+      {
+        "publisher": "Joomla!",
+        "url": "https://www.joomla.org/announcements/general-news/open-letter-foss-cms-cyber-resilience-act.html"
+      },
+      {
+        "publisher": "TYPO3 Association",
+        "url": "https://news.typo3.com/press-releases/open-letter-to-eu-legislators"
+      },
+      {
+        "publisher": "WordPress News",
+        "url": "https://wordpress.org/news/2023/08/concerns-over-the-european-unions-cyber-resilience-act-cra/"
+      }
+    ]
+  }
+]

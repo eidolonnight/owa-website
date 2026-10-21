@@ -1,0 +1,26 @@
+[
+  {
+    "family": "Newsreader",
+    "style": "normal",
+    "path": "assets/fonts/newsreader-regular.52f54c34206c.woff2",
+    "sourceBytes": 451664,
+    "woff2Bytes": 214960,
+    "cmapAndAxesPreserved": true
+  },
+  {
+    "family": "Newsreader",
+    "style": "italic",
+    "path": "assets/fonts/newsreader-italic.8920f06c4c11.woff2",
+    "sourceBytes": 495684,
+    "woff2Bytes": 239360,
+    "cmapAndAxesPreserved": true
+  },
+  {
+    "family": "Public Sans",
+    "style": "normal",
+    "path": "assets/fonts/public-sans.82d45c7f758c.woff2",
+    "sourceBytes": 103316,
+    "woff2Bytes": 42044,
+    "cmapAndAxesPreserved": true
+  }
+]

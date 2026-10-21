@@ -1,0 +1,104 @@
+[
+  {
+    "name": "index",
+    "url": "https://openwebsitealliance.org/",
+    "fetchedAt": "2026-10-07T16:13:48.944858+00:00",
+    "sha256": "bf02915ae7d4ddfe394ffe015d1c1a8d9651d313296c63352fb8a1ed0a49e631",
+    "bytes": 7124,
+    "snapshot": "index.source.html",
+    "anchors": [
+      "wordpress-card",
+      "contact"
+    ],
+    "links": [
+      "/",
+      "charter.html",
+      "charter.html#open-web-manifesto",
+      "https://www.drupal.org",
+      "https://www.drupal.org/association",
+      "https://www.joomla.org",
+      "https://www.opensourcematters.org",
+      "https://www.typo3.com",
+      "https://www.typo3.org/association",
+      "https://wordpress.org",
+      "charter.html#members-9",
+      "https://fair.pm",
+      "mailto:mary.hubbard@automattic.com",
+      "membership-process.html",
+      "index.html",
+      "privacy.html"
+    ]
+  },
+  {
+    "name": "charter",
+    "url": "https://openwebsitealliance.org/charter.html",
+    "fetchedAt": "2026-10-07T16:13:49.062181+00:00",
+    "sha256": "cbdd07511d41a23e11c8f6e13fc87a61949a8d9205f143e25c8767b9dc1d99bc",
+    "bytes": 12121,
+    "snapshot": "charter.source.html",
+    "anchors": [
+      "name",
+      "purpose",
+      "members",
+      "members-1",
+      "members-2",
+      "members-3",
+      "members-4",
+      "members-5",
+      "members-6",
+      "members-7",
+      "members-8",
+      "members-9",
+      "members-10",
+      "presidency-leadership",
+      "meetings",
+      "voting",
+      "open-web-manifesto"
+    ],
+    "links": [
+      "/",
+      "#open-web-manifesto",
+      "#open-web-manifesto",
+      "https://www.drupal.org/association/open-web-manifesto",
+      "index.html",
+      "privacy.html"
+    ]
+  },
+  {
+    "name": "membership-process",
+    "url": "https://openwebsitealliance.org/membership-process.html",
+    "fetchedAt": "2026-10-07T16:13:49.184378+00:00",
+    "sha256": "546e58202e85f7efbdc8778555bd7b2309723c166109fce85076c72d1bab512f",
+    "bytes": 8804,
+    "snapshot": "membership-process.source.html",
+    "anchors": [],
+    "links": [
+      "/",
+      "https://opensource.org/licenses",
+      "charter.html#open-web-manifesto",
+      "charter.html#open-web-manifesto",
+      "charter.html",
+      "https://opensource.org/licenses",
+      "charter.html#open-web-manifesto",
+      "charter.html",
+      "charter.html#members-10",
+      "index.html",
+      "privacy.html"
+    ]
+  },
+  {
+    "name": "privacy",
+    "url": "https://openwebsitealliance.org/privacy.html",
+    "fetchedAt": "2026-10-07T16:13:49.302232+00:00",
+    "sha256": "3cc3751960adf3a0d3a867e024df365b91111cd4cc802bb235a5ad16db0c7a3b",
+    "bytes": 2858,
+    "snapshot": "privacy.source.html",
+    "anchors": [],
+    "links": [
+      "/",
+      "https://help.github.com/en/github/site-policy/github-privacy-statement",
+      "index.html",
+      "privacy.html"
+    ]
+  }
+]

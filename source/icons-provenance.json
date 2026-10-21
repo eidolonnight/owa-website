@@ -1,0 +1,92 @@
+{
+  "source": "https://wordpress.org/",
+  "sourceBodySha256": "5d91472cdaa359bb1e590da205b05789e09bbf05ea651d71099d092c7debf8e1",
+  "sourceLibraryUrl": "https://raw.githubusercontent.com/WordPress/wordpress-develop/ec8bf8858cc3ff98efb5c1243bafb4eeff7ba0fd/src/wp-includes/blocks/social-link.php",
+  "sourceLibrarySha256": "e576c9112499cecedaa0f8b3cbb2eafc6a213fd6ab6ae15d392a39de8b77656f",
+  "license": "GPL-2.0-or-later",
+  "adaptation": "Only paths and original viewBox copied into decorative SVG; no geometric changes. See icons-LICENSE.txt and ../THIRD_PARTY_NOTICES.md.",
+  "adaptationDates": [
+    {"date": "2026-10-07", "change": "Initial collection adapted for decorative inline SVG."},
+    {"date": "2026-10-08", "change": "Added Flickr, Pinterest and Twitch from the pinned WordPress source."}
+  ],
+  "icons": [
+    {
+      "label": "X",
+      "viewBox": "0 0 24 24",
+      "source_selector": "footer.global-footer.wp-block-wporg-global-footer ul.wp-block-social-links > li.wp-social-link-x > a.wp-block-social-link-anchor > svg",
+      "asset_sha256": "6e27749296f11ca52053d5dec2126cdc4b92943ede0b5fec60722b36655fb7cf"
+    },
+    {
+      "label": "Bluesky",
+      "viewBox": "0 0 24 24",
+      "source_selector": "footer.global-footer.wp-block-wporg-global-footer ul.wp-block-social-links > li.wp-social-link-bluesky > a.wp-block-social-link-anchor > svg",
+      "asset_sha256": "a39234363e8ed87beca9d4573328df7c54938d43336817b6e125001ec8d9aea0"
+    },
+    {
+      "label": "Mastodon",
+      "viewBox": "0 0 24 24",
+      "source_selector": "footer.global-footer.wp-block-wporg-global-footer ul.wp-block-social-links > li.wp-social-link-mastodon > a.wp-block-social-link-anchor > svg",
+      "asset_sha256": "b1c9d91f5e72da9fd6458855389dd7e091406c4ce741fe1ed7c83c26ea541db2"
+    },
+    {
+      "label": "Threads",
+      "viewBox": "0 0 24 24",
+      "source_selector": "footer.global-footer.wp-block-wporg-global-footer ul.wp-block-social-links > li.wp-social-link-threads > a.wp-block-social-link-anchor > svg",
+      "asset_sha256": "c0dcf7f876fed5b92bb3f6d4c9562370cf0e320beca1aedb865ec5f5ec3cfca9"
+    },
+    {
+      "label": "Facebook",
+      "viewBox": "0 0 24 24",
+      "source_selector": "footer.global-footer.wp-block-wporg-global-footer ul.wp-block-social-links > li.wp-social-link-facebook > a.wp-block-social-link-anchor > svg",
+      "asset_sha256": "0cf1cf8289607fa05c57ae0b890f888025f584de8aa3504f5176cbfa11225244"
+    },
+    {
+      "label": "Instagram",
+      "viewBox": "0 0 24 24",
+      "source_selector": "footer.global-footer.wp-block-wporg-global-footer ul.wp-block-social-links > li.wp-social-link-instagram > a.wp-block-social-link-anchor > svg",
+      "asset_sha256": "e8477145bbe01616cb87828329618fe7588b7f84447e2957f4efb8bc22ae714f"
+    },
+    {
+      "label": "LinkedIn",
+      "viewBox": "0 0 24 24",
+      "source_selector": "footer.global-footer.wp-block-wporg-global-footer ul.wp-block-social-links > li.wp-social-link-linkedin > a.wp-block-social-link-anchor > svg",
+      "asset_sha256": "afe276c2048b45e6d4dda1e13f3e9ba28d35665bca7df813232bbc7b7d759d61"
+    },
+    {
+      "label": "TikTok",
+      "viewBox": "0 0 32 32",
+      "source_selector": "footer.global-footer.wp-block-wporg-global-footer ul.wp-block-social-links > li.wp-social-link-tiktok > a.wp-block-social-link-anchor > svg",
+      "asset_sha256": "86c20ad5cf1667e5fdb6587a8578494aee68a1bc68d13d38c233c0697bbcdbd2"
+    },
+    {
+      "label": "YouTube",
+      "viewBox": "0 0 24 24",
+      "source_selector": "footer.global-footer.wp-block-wporg-global-footer ul.wp-block-social-links > li.wp-social-link-youtube > a.wp-block-social-link-anchor > svg",
+      "asset_sha256": "f149dfdd33e07ab17c06e26babd9d05fbf50fde01ad7406d97ca7cecedd0f7ef"
+    },
+    {
+      "label": "Tumblr",
+      "viewBox": "0 0 24 24",
+      "source_selector": "footer.global-footer.wp-block-wporg-global-footer ul.wp-block-social-links > li.wp-social-link-tumblr > a.wp-block-social-link-anchor > svg",
+      "asset_sha256": "bfd3f34992a6197afea4cc1743302bef0d4a34958115a0a92968654c074b8bf8"
+    },
+    {
+      "label": "Flickr",
+      "viewBox": "0 0 24 24",
+      "sourceLibraryKey": "flickr",
+      "geometrySha256": "33761f164017d702e2f77db0640e311ba092e8490a1ecc05e0f9a2b3a85f98f5"
+    },
+    {
+      "label": "Pinterest",
+      "viewBox": "0 0 24 24",
+      "sourceLibraryKey": "pinterest",
+      "geometrySha256": "1fb39dde5efc88dbfdd83020c72d756be955f2b7ea86bcdb1795755b76ba2d20"
+    },
+    {
+      "label": "Twitch",
+      "viewBox": "0 0 24 24",
+      "sourceLibraryKey": "twitch",
+      "geometrySha256": "7c7c1a878d1f40b40b38a563127be4a4f30bc528f12bd742c79845ce5c1bea56"
+    }
+  ]
+}

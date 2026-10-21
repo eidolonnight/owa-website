@@ -1,0 +1,770 @@
+{
+  "checkedAt": "2026-10-08T12:14:45.460727+00:00",
+  "scope": "All discovered central project and representing-organization consumer social profiles, including official archives/signposts; no regional, team, personal, code-hosting, chat or sharing links. No claim of recent posting activity or unlinked-account completeness.",
+  "members": [
+    {
+      "member": "Drupal",
+      "profiles": [
+        {
+          "label": "Bluesky",
+          "url": "https://bsky.app/profile/drupal.org",
+          "name": "Drupal on Bluesky",
+          "status": "preferred emerging platform; displayed URL and public API resolve current handle",
+          "evidence": [
+            {
+              "url": "https://www.drupal.org/association/blog/our-social-media-focus-2025-and-beyond",
+              "capture": "socials-drupal-joomla/raw/drupal-social-policy.html",
+              "sha256": "3fcff19e33c6b9e06dd5ae001a00f4cdeb34f32dd156300ad2fa99a849e51c0c",
+              "anchorIndex": 77,
+              "href": "https://bsky.app/profile/drupalofficial.bsky.social",
+              "text": "https://bsky.app/profile/drupal.org"
+            }
+          ],
+          "canonicalNote": "Policy anchor text says drupal.org but href is drupalofficial.bsky.social. Public API returns drupal.org; requested old handle is omitted. Do not copy stale href."
+        },
+        {
+          "label": "Bluesky",
+          "url": "https://bsky.app/profile/drupalassociation.bsky.social",
+          "name": "Drupal Association on Bluesky",
+          "status": "currently linked official profile",
+          "evidence": [
+            {
+              "url": "https://www.drupal.org/association/blog/our-social-media-focus-2025-and-beyond",
+              "capture": "socials-drupal-joomla/raw/drupal-social-policy.html",
+              "sha256": "3fcff19e33c6b9e06dd5ae001a00f4cdeb34f32dd156300ad2fa99a849e51c0c",
+              "anchorIndex": 78,
+              "href": "https://bsky.app/profile/drupalassociation.bsky.social",
+              "text": "https://bsky.app/profile/drupalassociation.bsky.social"
+            },
+            {
+              "url": "https://www.drupal.org/association",
+              "capture": "socials-drupal-joomla/raw/drupal-association.html",
+              "sha256": "7587682d2238192eb5a2c9dbc3fdc018b03de837254040f4c727301e07e1e2be",
+              "anchorIndex": 98,
+              "href": "https://bsky.app/profile/did:plc:q74ryyfleo6sdducjjsqjv2z",
+              "text": "Bluesky"
+            }
+          ],
+          "canonicalNote": ""
+        },
+        {
+          "label": "Facebook",
+          "url": "https://www.facebook.com/DrupalOpenSource/",
+          "name": "Drupal on Facebook",
+          "status": "currently linked official profile",
+          "evidence": [
+            {
+              "url": "https://new.drupal.org/",
+              "capture": "socials-drupal-joomla/raw/drupal-home.html",
+              "sha256": "4925e9dd029127136346d43b94e2de46f521dc433cdf5524f0768f3dbfd8bf73",
+              "anchorIndex": 86,
+              "href": "https://www.facebook.com/DrupalOpenSource/",
+              "text": "facebook"
+            }
+          ],
+          "canonicalNote": ""
+        },
+        {
+          "label": "Flickr",
+          "url": "https://www.flickr.com/photos/drupalassoc/",
+          "name": "Drupal Association on Flickr (photo archive)",
+          "status": "legitimately official photo archive; current activity unverified; include if ALL official profiles rather than current communications only",
+          "evidence": [
+            {
+              "url": "https://www.drupal.org/about/media-kit/social-media",
+              "capture": "socials-drupal-joomla/raw/drupal-social.html",
+              "sha256": "a48b5ae018e55cc012c926d5c67598640a586bdb8115f26f79e08a11766c9708",
+              "anchorIndex": 84,
+              "href": "http://www.flickr.com/photos/drupalassoc/",
+              "text": "Drupal"
+            }
+          ],
+          "canonicalNote": "Directory gives http://www.flickr.com/photos/drupalassoc/; captured HTTPS destination returns title Drupal Association | Flickr."
+        },
+        {
+          "label": "Instagram",
+          "url": "https://www.instagram.com/drupalassociation/",
+          "name": "Drupal Association on Instagram",
+          "status": "currently linked official profile",
+          "evidence": [
+            {
+              "url": "https://new.drupal.org/",
+              "capture": "socials-drupal-joomla/raw/drupal-home.html",
+              "sha256": "4925e9dd029127136346d43b94e2de46f521dc433cdf5524f0768f3dbfd8bf73",
+              "anchorIndex": 87,
+              "href": "https://www.instagram.com/drupalassociation/",
+              "text": "instagram"
+            }
+          ],
+          "canonicalNote": ""
+        },
+        {
+          "label": "LinkedIn",
+          "url": "https://www.linkedin.com/company/drupal-project/",
+          "name": "Drupal on LinkedIn",
+          "status": "currently linked official profile",
+          "evidence": [
+            {
+              "url": "https://new.drupal.org/",
+              "capture": "socials-drupal-joomla/raw/drupal-home.html",
+              "sha256": "4925e9dd029127136346d43b94e2de46f521dc433cdf5524f0768f3dbfd8bf73",
+              "anchorIndex": 88,
+              "href": "https://www.linkedin.com/company/drupal-project/",
+              "text": "linkedin"
+            }
+          ],
+          "canonicalNote": ""
+        },
+        {
+          "label": "LinkedIn",
+          "url": "https://www.linkedin.com/company/drupal-association/",
+          "name": "Drupal Association on LinkedIn",
+          "status": "currently linked official profile",
+          "evidence": [
+            {
+              "url": "https://www.drupal.org/about/media-kit/social-media",
+              "capture": "socials-drupal-joomla/raw/drupal-social.html",
+              "sha256": "a48b5ae018e55cc012c926d5c67598640a586bdb8115f26f79e08a11766c9708",
+              "anchorIndex": 111,
+              "href": "https://www.linkedin.com/company/drupal-association/",
+              "text": "Drupal Association"
+            },
+            {
+              "url": "https://www.drupal.org/association/blog/our-social-media-focus-2025-and-beyond",
+              "capture": "socials-drupal-joomla/raw/drupal-social-policy.html",
+              "sha256": "3fcff19e33c6b9e06dd5ae001a00f4cdeb34f32dd156300ad2fa99a849e51c0c",
+              "anchorIndex": 71,
+              "href": "https://www.linkedin.com/company/drupal-association",
+              "text": "https://www.linkedin.com/company/drupal-association"
+            },
+            {
+              "url": "https://www.drupal.org/association",
+              "capture": "socials-drupal-joomla/raw/drupal-association.html",
+              "sha256": "7587682d2238192eb5a2c9dbc3fdc018b03de837254040f4c727301e07e1e2be",
+              "anchorIndex": 97,
+              "href": "https://www.linkedin.com/company/drupal-association/posts/?feedView=all",
+              "text": "LinkedIn"
+            }
+          ],
+          "canonicalNote": ""
+        },
+        {
+          "label": "Mastodon",
+          "url": "https://mastodon.social/@drupal",
+          "name": "Drupal on Mastodon",
+          "status": "currently linked official profile",
+          "evidence": [
+            {
+              "url": "https://new.drupal.org/",
+              "capture": "socials-drupal-joomla/raw/drupal-home.html",
+              "sha256": "4925e9dd029127136346d43b94e2de46f521dc433cdf5524f0768f3dbfd8bf73",
+              "anchorIndex": 89,
+              "href": "https://mastodon.social/@drupal",
+              "text": "mastodon"
+            }
+          ],
+          "canonicalNote": ""
+        },
+        {
+          "label": "Mastodon",
+          "url": "https://mastodon.social/@drupalassoc",
+          "name": "Drupal Association on Mastodon",
+          "status": "currently linked official profile",
+          "evidence": [
+            {
+              "url": "https://www.drupal.org/about/media-kit/social-media",
+              "capture": "socials-drupal-joomla/raw/drupal-social.html",
+              "sha256": "a48b5ae018e55cc012c926d5c67598640a586bdb8115f26f79e08a11766c9708",
+              "anchorIndex": 113,
+              "href": "https://mastodon.social/@drupalassoc",
+              "text": "@drupalassoc"
+            },
+            {
+              "url": "https://www.drupal.org/association/blog/our-social-media-focus-2025-and-beyond",
+              "capture": "socials-drupal-joomla/raw/drupal-social-policy.html",
+              "sha256": "3fcff19e33c6b9e06dd5ae001a00f4cdeb34f32dd156300ad2fa99a849e51c0c",
+              "anchorIndex": 75,
+              "href": "https://mastodon.social/@drupalassoc",
+              "text": "https://mastodon.social/@drupalassoc"
+            },
+            {
+              "url": "https://www.drupal.org/association",
+              "capture": "socials-drupal-joomla/raw/drupal-association.html",
+              "sha256": "7587682d2238192eb5a2c9dbc3fdc018b03de837254040f4c727301e07e1e2be",
+              "anchorIndex": 99,
+              "href": "https://mastodon.social/@drupalassoc",
+              "text": "Mastodon"
+            }
+          ],
+          "canonicalNote": ""
+        },
+        {
+          "label": "Threads",
+          "url": "https://www.threads.com/@drupalassociation",
+          "name": "Drupal Association on Threads",
+          "status": "official directory-listed; live profile; posting recency not established",
+          "evidence": [
+            {
+              "url": "https://www.drupal.org/about/media-kit/social-media",
+              "capture": "socials-drupal-joomla/raw/drupal-social.html",
+              "sha256": "a48b5ae018e55cc012c926d5c67598640a586bdb8115f26f79e08a11766c9708",
+              "anchorIndex": 138,
+              "href": "https://www.threads.net/@drupalassociation",
+              "text": "@drupalassociation"
+            }
+          ],
+          "canonicalNote": "Directory uses threads.net. Captured HTTP final URL and og:url both give threads.com."
+        },
+        {
+          "label": "X",
+          "url": "https://twitter.com/drupal",
+          "name": "Drupal on X (signpost account)",
+          "status": "historical official signpost; transitioned away from regular posting",
+          "evidence": [
+            {
+              "url": "https://www.drupal.org/about/media-kit/social-media",
+              "capture": "socials-drupal-joomla/raw/drupal-social.html",
+              "sha256": "a48b5ae018e55cc012c926d5c67598640a586bdb8115f26f79e08a11766c9708",
+              "anchorIndex": 118,
+              "href": "https://twitter.com/drupal",
+              "text": "@drupal"
+            }
+          ],
+          "canonicalNote": ""
+        },
+        {
+          "label": "X",
+          "url": "https://twitter.com/DrupalAssoc",
+          "name": "Drupal Association on X (signpost account)",
+          "status": "historical official signpost; transitioned away from regular posting",
+          "evidence": [
+            {
+              "url": "https://www.drupal.org/about/media-kit/social-media",
+              "capture": "socials-drupal-joomla/raw/drupal-social.html",
+              "sha256": "a48b5ae018e55cc012c926d5c67598640a586bdb8115f26f79e08a11766c9708",
+              "anchorIndex": 120,
+              "href": "https://twitter.com/DrupalAssoc",
+              "text": "@DrupalAssoc"
+            }
+          ],
+          "canonicalNote": ""
+        },
+        {
+          "label": "YouTube",
+          "url": "https://www.youtube.com/@DrupalAssociation",
+          "name": "Drupal Association on YouTube",
+          "status": "currently linked official profile",
+          "evidence": [
+            {
+              "url": "https://new.drupal.org/",
+              "capture": "socials-drupal-joomla/raw/drupal-home.html",
+              "sha256": "4925e9dd029127136346d43b94e2de46f521dc433cdf5524f0768f3dbfd8bf73",
+              "anchorIndex": 91,
+              "href": "https://www.youtube.com/@DrupalAssociation",
+              "text": "youtube"
+            }
+          ],
+          "canonicalNote": ""
+        }
+      ]
+    },
+    {
+      "member": "Joomla!",
+      "profiles": [
+        {
+          "label": "Bluesky",
+          "url": "https://bsky.app/profile/joomla.org",
+          "name": "Joomla! on Bluesky",
+          "status": "currently linked official profile",
+          "evidence": [
+            {
+              "url": "https://www.joomla.org/",
+              "capture": "socials-drupal-joomla/raw/joomla-home.html",
+              "sha256": "f862eb08c31b32f13737c567bbf708ff3136ce2f68c8f7a4f96d587ecbcfd258",
+              "anchorIndex": 91,
+              "href": "https://bsky.app/profile/joomla.org",
+              "text": "Joomla! on Bluesky"
+            }
+          ],
+          "canonicalNote": ""
+        },
+        {
+          "label": "Facebook",
+          "url": "https://www.facebook.com/joomla",
+          "name": "Joomla! on Facebook",
+          "status": "currently linked official profile",
+          "evidence": [
+            {
+              "url": "https://www.joomla.org/",
+              "capture": "socials-drupal-joomla/raw/joomla-home.html",
+              "sha256": "f862eb08c31b32f13737c567bbf708ff3136ce2f68c8f7a4f96d587ecbcfd258",
+              "anchorIndex": 89,
+              "href": "https://www.facebook.com/joomla",
+              "text": "Joomla! on Facebook"
+            }
+          ],
+          "canonicalNote": ""
+        },
+        {
+          "label": "Instagram",
+          "url": "https://www.instagram.com/joomlaofficial/",
+          "name": "Joomla! on Instagram",
+          "status": "currently linked official profile",
+          "evidence": [
+            {
+              "url": "https://www.joomla.org/",
+              "capture": "socials-drupal-joomla/raw/joomla-home.html",
+              "sha256": "f862eb08c31b32f13737c567bbf708ff3136ce2f68c8f7a4f96d587ecbcfd258",
+              "anchorIndex": 96,
+              "href": "https://www.instagram.com/joomlaofficial/",
+              "text": "Joomla! on Instagram"
+            }
+          ],
+          "canonicalNote": ""
+        },
+        {
+          "label": "LinkedIn",
+          "url": "https://www.linkedin.com/company/joomla",
+          "name": "Joomla! on LinkedIn",
+          "status": "currently linked official profile",
+          "evidence": [
+            {
+              "url": "https://www.joomla.org/",
+              "capture": "socials-drupal-joomla/raw/joomla-home.html",
+              "sha256": "f862eb08c31b32f13737c567bbf708ff3136ce2f68c8f7a4f96d587ecbcfd258",
+              "anchorIndex": 94,
+              "href": "https://www.linkedin.com/company/joomla",
+              "text": "Joomla! on LinkedIn"
+            }
+          ],
+          "canonicalNote": ""
+        },
+        {
+          "label": "Mastodon",
+          "url": "https://joomla.social/@joomla",
+          "name": "Joomla! on Mastodon",
+          "status": "official directory-listed and explicitly active in January 2026 account list",
+          "evidence": [
+            {
+              "url": "https://www.joomla.org/media-press/where-to-find-joomla.html",
+              "capture": "socials-drupal-joomla/raw/joomla-directory.html",
+              "sha256": "ae48e57250b4eb15d94db2e7577e723c4696e3d30a36ba02a825ec3470e5794c",
+              "anchorIndex": 64,
+              "href": "https://joomla.social/@joomla",
+              "text": "https://joomla.social/@joomla"
+            },
+            {
+              "url": "https://magazine.joomla.org/issues/2026/january-2026/together-we-grow-joomla-become-a-joomfluencer",
+              "capture": "socials-drupal-joomla/raw/joomla-joomfluencer.html",
+              "sha256": "023a9bf3ef5523b41871eb6705cc58aecc13415587551bb844ac4144c5ec37f8",
+              "anchorIndex": 56,
+              "href": "https://joomla.social/@joomla",
+              "text": "https://joomla.social/@joomla"
+            }
+          ],
+          "canonicalNote": ""
+        },
+        {
+          "label": "Pinterest",
+          "url": "https://www.pinterest.com/joomla",
+          "name": "Joomla! on Pinterest",
+          "status": "currently linked official profile",
+          "evidence": [
+            {
+              "url": "https://www.joomla.org/",
+              "capture": "socials-drupal-joomla/raw/joomla-home.html",
+              "sha256": "f862eb08c31b32f13737c567bbf708ff3136ce2f68c8f7a4f96d587ecbcfd258",
+              "anchorIndex": 95,
+              "href": "https://www.pinterest.com/joomla",
+              "text": "Joomla! on Pinterest"
+            }
+          ],
+          "canonicalNote": ""
+        },
+        {
+          "label": "Threads",
+          "url": "https://www.threads.com/@joomlaofficial",
+          "name": "Joomla! on Threads",
+          "status": "currently linked official profile",
+          "evidence": [
+            {
+              "url": "https://www.joomla.org/",
+              "capture": "socials-drupal-joomla/raw/joomla-home.html",
+              "sha256": "f862eb08c31b32f13737c567bbf708ff3136ce2f68c8f7a4f96d587ecbcfd258",
+              "anchorIndex": 92,
+              "href": "https://www.threads.com/@joomlaofficial",
+              "text": "Joomla! on Threads"
+            }
+          ],
+          "canonicalNote": ""
+        },
+        {
+          "label": "X",
+          "url": "https://x.com/joomla",
+          "name": "Joomla! on X",
+          "status": "currently linked official profile",
+          "evidence": [
+            {
+              "url": "https://www.joomla.org/",
+              "capture": "socials-drupal-joomla/raw/joomla-home.html",
+              "sha256": "f862eb08c31b32f13737c567bbf708ff3136ce2f68c8f7a4f96d587ecbcfd258",
+              "anchorIndex": 90,
+              "href": "https://x.com/joomla",
+              "text": "Joomla! on X"
+            }
+          ],
+          "canonicalNote": ""
+        },
+        {
+          "label": "YouTube",
+          "url": "https://www.youtube.com/@joomla",
+          "name": "Joomla! on YouTube",
+          "status": "currently linked official profile",
+          "evidence": [
+            {
+              "url": "https://www.joomla.org/",
+              "capture": "socials-drupal-joomla/raw/joomla-home.html",
+              "sha256": "f862eb08c31b32f13737c567bbf708ff3136ce2f68c8f7a4f96d587ecbcfd258",
+              "anchorIndex": 93,
+              "href": "https://www.youtube.com/user/joomla",
+              "text": "Joomla! on YouTube"
+            },
+            {
+              "url": "https://magazine.joomla.org/issues/2026/january-2026/together-we-grow-joomla-become-a-joomfluencer",
+              "capture": "socials-drupal-joomla/raw/joomla-joomfluencer.html",
+              "sha256": "023a9bf3ef5523b41871eb6705cc58aecc13415587551bb844ac4144c5ec37f8",
+              "anchorIndex": 59,
+              "href": "https://www.youtube.com/@joomla",
+              "text": "https://www.youtube.com/@joomla"
+            }
+          ],
+          "canonicalNote": "2026 active-accounts article publishes @joomla. Homepage uses /user/joomla and directory /joomla. Treated as first-party-listed aliases, not separately counted; destination redirect equivalence not fetched."
+        }
+      ]
+    },
+    {
+      "member": "TYPO3",
+      "profiles": [
+        {
+          "label": "Bluesky",
+          "url": "https://bsky.app/profile/typo3.com",
+          "name": "TYPO3 on Bluesky",
+          "status": "current_officially_linked",
+          "evidence": [
+            {
+              "url": "https://typo3.org/",
+              "capture": "socials-typo3-wordpress/https-typo3-org.html",
+              "sha256": "0dc2db435220acb2c0491d08deb3355bd438240271eb292d1625e441240e17b1",
+              "anchorIndex": 116,
+              "href": "\n                                https://bsky.app/profile/typo3.com\n                            ",
+              "text": "Bluesky"
+            }
+          ],
+          "canonicalNote": ""
+        },
+        {
+          "label": "Facebook",
+          "url": "https://www.facebook.com/typo3",
+          "name": "TYPO3 on Facebook",
+          "status": "current_officially_linked",
+          "evidence": [
+            {
+              "url": "https://typo3.org/",
+              "capture": "socials-typo3-wordpress/https-typo3-org.html",
+              "sha256": "0dc2db435220acb2c0491d08deb3355bd438240271eb292d1625e441240e17b1",
+              "anchorIndex": 118,
+              "href": "\n                                https://www.facebook.com/typo3\n                            ",
+              "text": "Facebook"
+            }
+          ],
+          "canonicalNote": ""
+        },
+        {
+          "label": "Instagram",
+          "url": "https://www.instagram.com/typo3_official",
+          "name": "TYPO3 on Instagram",
+          "status": "current_officially_linked",
+          "evidence": [
+            {
+              "url": "https://typo3.org/",
+              "capture": "socials-typo3-wordpress/https-typo3-org.html",
+              "sha256": "0dc2db435220acb2c0491d08deb3355bd438240271eb292d1625e441240e17b1",
+              "anchorIndex": 115,
+              "href": "\n                                https://www.instagram.com/typo3_official\n                            ",
+              "text": "Instagram"
+            }
+          ],
+          "canonicalNote": ""
+        },
+        {
+          "label": "LinkedIn",
+          "url": "https://www.linkedin.com/company/typo3-gmbh",
+          "name": "TYPO3 on LinkedIn",
+          "status": "current_officially_linked",
+          "evidence": [
+            {
+              "url": "https://typo3.org/",
+              "capture": "socials-typo3-wordpress/https-typo3-org.html",
+              "sha256": "0dc2db435220acb2c0491d08deb3355bd438240271eb292d1625e441240e17b1",
+              "anchorIndex": 114,
+              "href": "\n                                https://www.linkedin.com/company/typo3-gmbh\n                            ",
+              "text": "LinkedIn"
+            }
+          ],
+          "canonicalNote": ""
+        },
+        {
+          "label": "Mastodon",
+          "url": "https://typo3.social/@typo3",
+          "name": "TYPO3 on Mastodon",
+          "status": "current_officially_linked",
+          "evidence": [
+            {
+              "url": "https://typo3.org/",
+              "capture": "socials-typo3-wordpress/https-typo3-org.html",
+              "sha256": "0dc2db435220acb2c0491d08deb3355bd438240271eb292d1625e441240e17b1",
+              "anchorIndex": 117,
+              "href": "\n                                https://typo3.social/@typo3\n                            ",
+              "text": "Mastodon"
+            }
+          ],
+          "canonicalNote": ""
+        },
+        {
+          "label": "X",
+          "url": "https://twitter.com/typo3",
+          "name": "TYPO3 on X (historical account)",
+          "status": "historically_official_current_activity_unverified",
+          "evidence": [
+            {
+              "url": "https://typo3.org/article/season-one-wrap-up-season-two-preview-1",
+              "capture": "socials-typo3-wordpress/https-typo3-org-article-season-one-wrap-up-season-two-preview-1.html",
+              "sha256": "1fefc257db51d7ff07fc6631ae2e8e82d684085c2a87044cd3a27ac367171be8",
+              "anchorIndex": 23,
+              "href": "https://twitter.com/typo3",
+              "text": "TYPO3 Twitter channel"
+            }
+          ],
+          "canonicalNote": ""
+        },
+        {
+          "label": "YouTube",
+          "url": "https://www.youtube.com/c/typo3",
+          "name": "TYPO3 on YouTube",
+          "status": "current_officially_linked",
+          "evidence": [
+            {
+              "url": "https://typo3.org/",
+              "capture": "socials-typo3-wordpress/https-typo3-org.html",
+              "sha256": "0dc2db435220acb2c0491d08deb3355bd438240271eb292d1625e441240e17b1",
+              "anchorIndex": 119,
+              "href": "\n                                https://www.youtube.com/c/typo3\n                            ",
+              "text": "YouTube"
+            }
+          ],
+          "canonicalNote": ""
+        }
+      ]
+    },
+    {
+      "member": "WordPress",
+      "profiles": [
+        {
+          "label": "Bluesky",
+          "url": "https://bsky.app/profile/wordpress.org",
+          "name": "WordPress on Bluesky",
+          "status": "current_officially_linked",
+          "evidence": [
+            {
+              "url": "https://wordpress.org/",
+              "capture": "socials-typo3-wordpress/https-wordpress-org.html",
+              "sha256": "cbe91f875c122746472871bab9a028d6a75355ad274d5ba74d7e14918588ce1d",
+              "anchorIndex": 69,
+              "href": "https://bsky.app/profile/wordpress.org",
+              "text": "Visit our Bluesky account"
+            }
+          ],
+          "canonicalNote": ""
+        },
+        {
+          "label": "Facebook",
+          "url": "https://www.facebook.com/WordPress/",
+          "name": "WordPress on Facebook",
+          "status": "current_officially_linked",
+          "evidence": [
+            {
+              "url": "https://wordpress.org/",
+              "capture": "socials-typo3-wordpress/https-wordpress-org.html",
+              "sha256": "cbe91f875c122746472871bab9a028d6a75355ad274d5ba74d7e14918588ce1d",
+              "anchorIndex": 72,
+              "href": "https://www.facebook.com/WordPress/",
+              "text": "Visit our Facebook page"
+            }
+          ],
+          "canonicalNote": ""
+        },
+        {
+          "label": "Instagram",
+          "url": "https://www.instagram.com/wordpress/",
+          "name": "WordPress on Instagram",
+          "status": "current_officially_linked",
+          "evidence": [
+            {
+              "url": "https://wordpress.org/",
+              "capture": "socials-typo3-wordpress/https-wordpress-org.html",
+              "sha256": "cbe91f875c122746472871bab9a028d6a75355ad274d5ba74d7e14918588ce1d",
+              "anchorIndex": 73,
+              "href": "https://www.instagram.com/wordpress/",
+              "text": "Visit our Instagram account"
+            }
+          ],
+          "canonicalNote": ""
+        },
+        {
+          "label": "LinkedIn",
+          "url": "https://www.linkedin.com/company/wordpress",
+          "name": "WordPress on LinkedIn",
+          "status": "current_officially_linked",
+          "evidence": [
+            {
+              "url": "https://wordpress.org/",
+              "capture": "socials-typo3-wordpress/https-wordpress-org.html",
+              "sha256": "cbe91f875c122746472871bab9a028d6a75355ad274d5ba74d7e14918588ce1d",
+              "anchorIndex": 74,
+              "href": "https://www.linkedin.com/company/wordpress",
+              "text": "Visit our LinkedIn account"
+            }
+          ],
+          "canonicalNote": ""
+        },
+        {
+          "label": "Mastodon",
+          "url": "https://mastodon.world/@WordPress",
+          "name": "WordPress on Mastodon",
+          "status": "current_officially_linked",
+          "evidence": [
+            {
+              "url": "https://wordpress.org/",
+              "capture": "socials-typo3-wordpress/https-wordpress-org.html",
+              "sha256": "cbe91f875c122746472871bab9a028d6a75355ad274d5ba74d7e14918588ce1d",
+              "anchorIndex": 70,
+              "href": "https://mastodon.world/@WordPress",
+              "text": "Visit our Mastodon account"
+            }
+          ],
+          "canonicalNote": ""
+        },
+        {
+          "label": "Threads",
+          "url": "https://www.threads.net/@wordpress",
+          "name": "WordPress on Threads",
+          "status": "current_officially_linked",
+          "evidence": [
+            {
+              "url": "https://wordpress.org/",
+              "capture": "socials-typo3-wordpress/https-wordpress-org.html",
+              "sha256": "cbe91f875c122746472871bab9a028d6a75355ad274d5ba74d7e14918588ce1d",
+              "anchorIndex": 71,
+              "href": "https://www.threads.net/@wordpress",
+              "text": "Visit our Threads account"
+            }
+          ],
+          "canonicalNote": ""
+        },
+        {
+          "label": "TikTok",
+          "url": "https://www.tiktok.com/@wordpress",
+          "name": "WordPress on TikTok",
+          "status": "current_officially_linked",
+          "evidence": [
+            {
+              "url": "https://wordpress.org/",
+              "capture": "socials-typo3-wordpress/https-wordpress-org.html",
+              "sha256": "cbe91f875c122746472871bab9a028d6a75355ad274d5ba74d7e14918588ce1d",
+              "anchorIndex": 75,
+              "href": "https://www.tiktok.com/@wordpress",
+              "text": "Visit our TikTok account"
+            }
+          ],
+          "canonicalNote": ""
+        },
+        {
+          "label": "Tumblr",
+          "url": "https://wordpress.tumblr.com/",
+          "name": "WordPress on Tumblr",
+          "status": "current_officially_linked",
+          "evidence": [
+            {
+              "url": "https://wordpress.org/",
+              "capture": "socials-typo3-wordpress/https-wordpress-org.html",
+              "sha256": "cbe91f875c122746472871bab9a028d6a75355ad274d5ba74d7e14918588ce1d",
+              "anchorIndex": 77,
+              "href": "https://wordpress.tumblr.com/",
+              "text": "Visit our Tumblr account"
+            }
+          ],
+          "canonicalNote": ""
+        },
+        {
+          "label": "Twitch",
+          "url": "https://www.twitch.tv/wordpressevents",
+          "name": "WordPress on Twitch (experimental)",
+          "status": "official_experimental",
+          "evidence": [
+            {
+              "url": "https://make.wordpress.org/marketing/handbook/social-media/",
+              "capture": "socials-typo3-wordpress/https-make-wordpress-org-marketing-handbook-social-media.html",
+              "sha256": "042a714842fd9c88aafc4a5b9a55aaea63e90279873d37e2f769ba0468b758c7",
+              "anchorIndex": 52,
+              "href": "https://www.twitch.tv/wordpressevents",
+              "text": "Twitch"
+            },
+            {
+              "url": "https://make.wordpress.org/marketing/2026/06/13/find-the-best-of-wordpress/",
+              "capture": "socials-typo3-wordpress/https-make-wordpress-org-marketing-2026-06-13-find-the-best-of-wordpress.html",
+              "sha256": "b077796454110a43f4b8d50da59ac090d5e695447ad05881add91a47aa18fa09",
+              "anchorIndex": 62,
+              "href": "https://www.twitch.tv/wordpressevents",
+              "text": "Twitch"
+            }
+          ],
+          "canonicalNote": ""
+        },
+        {
+          "label": "X",
+          "url": "https://www.x.com/WordPress",
+          "name": "WordPress on X",
+          "status": "current_officially_linked",
+          "evidence": [
+            {
+              "url": "https://wordpress.org/",
+              "capture": "socials-typo3-wordpress/https-wordpress-org.html",
+              "sha256": "cbe91f875c122746472871bab9a028d6a75355ad274d5ba74d7e14918588ce1d",
+              "anchorIndex": 68,
+              "href": "https://www.x.com/WordPress",
+              "text": "Visit our X (formerly Twitter) account"
+            }
+          ],
+          "canonicalNote": ""
+        },
+        {
+          "label": "YouTube",
+          "url": "https://www.youtube.com/wordpress",
+          "name": "WordPress on YouTube",
+          "status": "current_officially_linked",
+          "evidence": [
+            {
+              "url": "https://wordpress.org/",
+              "capture": "socials-typo3-wordpress/https-wordpress-org.html",
+              "sha256": "cbe91f875c122746472871bab9a028d6a75355ad274d5ba74d7e14918588ce1d",
+              "anchorIndex": 76,
+              "href": "https://www.youtube.com/wordpress",
+              "text": "Visit our YouTube channel"
+            }
+          ],
+          "canonicalNote": ""
+        }
+      ]
+    }
+  ]
+}
