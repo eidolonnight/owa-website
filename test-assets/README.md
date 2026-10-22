@@ -14,4 +14,4 @@ See [the repository's license scope and third-party notices](../THIRD_PARTY_NOTI
 
 ## Test-only scope
 
-This directory is excluded by the deployment allowlist. It is not a runtime dependency and must never be copied into `site/` or `dist/pages/`. Sharing the source repository still redistributes the test bundle and its notices.
+This directory is outside the `site/` upload. It is used only by the optional `tests/browser-qa.mjs` suite, is not a runtime dependency, and must never be copied into `site/`. Sharing the source repository still redistributes the test bundle and its notices.

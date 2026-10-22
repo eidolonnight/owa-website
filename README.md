@@ -2,46 +2,42 @@
 
 A static redesign of the [Open Website Alliance website](https://openwebsitealliance.org/), with the Alliance's Charter and Open Web Manifesto, membership information, news, and links to its member communities.
 
-The site uses HTML, CSS, and a small theme switcher. Content and light/dark themes work without JavaScript. Python generates the pages; visitors don't need a server-side application.
+The website is ordinary HTML, CSS, JavaScript, images, and fonts in **`site/`**. There is no build step, package installation, template engine, or server-side application. Content and system light/dark themes work without JavaScript; a small optional script adds the theme chooser.
 
-## Preview locally
+## Edit
 
-Use Python 3.13. From the repository directory:
+Edit the files that are served:
 
-```sh
-python -m venv .venv
-. .venv/bin/activate
-python -m pip install -r requirements.txt
-python pages.py
-python -m http.server 8000 --bind 127.0.0.1 --directory dist/pages
-```
+- Homepage, news, and member links: `site/index.html`.
+- Documents: `site/charter.html`, `site/membership-process.html`, and `site/privacy.html`.
+- Layout and styling: `site/assets/site.css`.
+- Theme chooser: `site/assets/theme.js`.
+- Logos and fonts: `site/images/` and `site/assets/fonts/`.
+- Missing-page recovery: `site/404.html`.
 
-Open [localhost:8000](http://localhost:8000). After source edits, follow the [rebuild instructions](CONTRIBUTING.md#rebuild-after-source-edits).
+Save and refresh. Nothing regenerates these files. Shared header/footer markup is repeated in the HTML pages, so update each copy when changing it. [Contributor notes](CONTRIBUTING.md) cover content, accessibility, and asset rights.
 
-## Make changes
+## Preview
 
-- Layout and styling: `source/home-template.html`, `source/styles.css`, and `source/theme.js`.
-- News and member links: `source/news.json` and `source/member-socials.json`.
-- Original documents, logos, fonts, and their provenance: `source/`.
-- Page generation and hosting adaptation: `build.py` and `pages.py`.
-
-Edit the source, not the generated `site/` or `dist/pages/` files. See [CONTRIBUTING.md](CONTRIBUTING.md) for content guidelines and checks.
-
-## Test
-
-With GNU Make, Node.js 22 or later, and Firefox installed:
+Open `site/index.html` in a browser, or serve `site/` with any static web server. For example, if Python is available:
 
 ```sh
-make check-pages
+python3 -m http.server 8000 --bind 127.0.0.1 --directory site
 ```
 
-This runs content and packaging tests, then checks the site in Firefox with light/dark themes and JavaScript enabled/disabled. Set `FIREFOX_BIN` if Firefox is not at `/usr/bin/firefox`.
+Then open [localhost:8000](http://localhost:8000). Python is only an optional example server, not a project dependency. A simple server does not reproduce GitHub Pages' custom missing-page handling; see the [deployment notes](docs/deployment.md).
 
-## Deploy
+## Publish
 
-GitHub Pages deployment is manual; a push only runs checks. Search indexing stays disabled unless separately enabled. These crawler directives do not make the site private.
+Push the edited files, then manually run **Publish static website** in GitHub Actions from `main`, with `publish` selected. The workflow uploads `site/` unchanged; it does not build the website. A push alone neither publishes nor runs the optional browser suite.
 
-See [the deployment guide](docs/deployment.md) for setup and publishing instructions.
+Search indexing remains disabled by the HTML meta tags and `robots.txt`. There is no deployment switch that silently rewrites them. These directives do not make the site private. See [deployment instructions](docs/deployment.md).
+
+## Optional checks and references
+
+[Browser checks](tests/README.md) are available for maintainers, but are not required to edit, preview, or upload the website. They never generate or rewrite site files.
+
+`provenance/` preserves original content snapshots, asset sources, and reference metadata. It is documentation, not a second set of authoring inputs, and is not uploaded with the website.
 
 ## License
 

@@ -6,25 +6,23 @@ import path from 'node:path';
 import http from 'node:http';
 import os from 'node:os';
 import {fileURLToPath} from 'node:url';
-const root=path.dirname(fileURLToPath(import.meta.url));
+const root=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..');
 const evidence=process.env.OWA_EVIDENCE || path.join(root,'qa-reports');
-const isPages=process.argv.includes('--pages');
-const site=isPages?path.resolve(process.env.OWA_SITE || path.join(root,'dist/pages')):path.join(root,'site');
-const pagesBuild=isPages?JSON.parse(fs.readFileSync(site+'-build.json','utf8')):null;
-const basePath=pagesBuild?.basePath || '/';
+const site=path.resolve(process.env.OWA_SITE || path.join(root,'site'));
+const basePath=process.env.OWA_BASE_PATH || '/owa-website/';
 if(!/^\/(?:[A-Za-z0-9_.-]+\/)*$/.test(basePath)||basePath.split('/').some(p=>p==='.'||p==='..'))throw new Error('Unsafe test mount');
-const manifestFile=isPages?site+'-manifest.json':path.join(root,'site-manifest.json');
-function verifiedManifestDigest(){
- const raw=fs.readFileSync(manifestFile);
- const expected=JSON.parse(raw);const paths=[];
- const walk=directory=>{for(const entry of fs.readdirSync(directory,{withFileTypes:true})){const file=path.join(directory,entry.name);if(entry.isSymbolicLink())throw new Error('Symlink in test output');if(entry.isDirectory())walk(file);else if(entry.isFile())paths.push(path.relative(site,file));}};walk(site);
- const actual=paths.sort().map(relative=>{const data=fs.readFileSync(path.join(site,relative));return {path:relative,bytes:data.length,sha256:createHash('sha256').update(data).digest('hex')};});
- if(JSON.stringify(actual)!==JSON.stringify(expected.files))throw new Error('Browser input does not match file manifest');
- return createHash('sha256').update(raw).digest('hex');
+// Read-only inventory: this suite never generates or rewrites website files.
+function fileManifest(){
+ const paths=[];
+ const walk=directory=>{for(const entry of fs.readdirSync(directory,{withFileTypes:true})){const file=path.join(directory,entry.name);if(entry.isSymbolicLink())throw new Error('Symlink in website');if(entry.isDirectory())walk(file);else if(entry.isFile())paths.push(path.relative(site,file));else throw new Error('Non-regular website entry');}};walk(site);
+ const files=paths.sort().map(relative=>{const data=fs.readFileSync(path.join(site,relative));return {path:relative,bytes:data.length,sha256:createHash('sha256').update(data).digest('hex')};});
+ return {files,fileCount:files.length,totalBytes:files.reduce((n,f)=>n+f.bytes,0)};
 }
+function verifiedManifestDigest(){return createHash('sha256').update(JSON.stringify(fileManifest())).digest('hex');}
+const testedManifest=fileManifest();
 const testedManifestSha256=verifiedManifestDigest();
-const socialProfiles=JSON.parse(fs.readFileSync(path.join(root,'source/member-socials.json'),'utf8'));
-const logoVariants=JSON.parse(fs.readFileSync(path.join(root,'source/member-logo-variants.json'),'utf8'));
+const socialProfiles=JSON.parse(fs.readFileSync(path.join(root,'provenance/member-socials.json'),'utf8'));
+const logoVariants=JSON.parse(fs.readFileSync(path.join(root,'provenance/member-logo-variants.json'),'utf8'));
 const noJS=process.argv.includes('--no-js');
 const dark=process.argv.includes('--dark');
 const suffix=(dark?'-dark':'')+(noJS?'-no-js':'');
@@ -45,7 +43,7 @@ const server=http.createServer((request,response)=>{
   if(pathname===basePath+'__javascript_executed__'){probeRan=true;response.writeHead(204);response.end();return;}
   let relative=decodeURIComponent(pathname.slice(basePath.length))||'index.html';
   let target=path.resolve(site,relative);let status=200;
-  if(!target.startsWith(site+path.sep)||relative==='sf.jsonc') {response.writeHead(403);response.end();return;}
+  if(!target.startsWith(site+path.sep)) {response.writeHead(403);response.end();return;}
   if(!fs.existsSync(target)&&!path.extname(relative)&&fs.existsSync(target+'.html'))target+='.html';
   if(denyFonts&&target.endsWith('.woff2')){deniedFonts++;response.writeHead(404,{'Cache-Control':'no-store'});response.end();return;}
   if(denyTheme&&themeScriptPaths.has(pathname)){deniedTheme++;response.writeHead(503,{'Content-Type':'text/javascript','Cache-Control':'no-store'});response.end();return;}
@@ -57,7 +55,7 @@ await new Promise(resolve=>server.listen(0,'127.0.0.1',resolve));
 const base=`http://127.0.0.1:${server.address().port}${basePath}`;
 const ff=spawn(process.env.FIREFOX_BIN || '/usr/bin/firefox',['--headless','--no-remote','--profile',profile,'--remote-debugging-port','0','about:blank'],{stdio:['ignore','pipe','pipe']});
 let socket, seq=0, context;const pending=new Map();let logs='';const events=[];let scenario='startup';
-const report={target:isPages?'github-pages-local':'legacy-local',basePath,pagesBuild,mode:noJS?'javascript-disabled':'normal',osColorScheme:dark?'dark':'light',manifestSha256:testedManifestSha256,cases:[],anchors:[],axe:[],resourceFailures:[],pageErrors:[],screenshots:[],readability:[],theme:[],unsupported:[],limitations:['Selected automated regressions, not full WCAG conformance or visual/screen-reader review.','Computed solid-color contrast does not prove contrast over imagery or complex compositing.']};
+const report={target:'static-files-local',basePath,manifest:testedManifest,mode:noJS?'javascript-disabled':'normal',osColorScheme:dark?'dark':'light',manifestSha256:testedManifestSha256,cases:[],anchors:[],axe:[],resourceFailures:[],pageErrors:[],screenshots:[],readability:[],theme:[],unsupported:[],limitations:['Selected automated regressions, not full WCAG conformance or visual/screen-reader review.','Computed solid-color contrast does not prove contrast over imagery or complex compositing.']};
 const deadline=setTimeout(()=>{report.result='failed';report.error='QA deadline exceeded';fs.writeFileSync(path.join(evidence,'browser-qa'+suffix+'.json'),JSON.stringify(report,null,2));console.error(report.error);ff.kill('SIGTERM');server.close();process.exit(1)},420000);
 function ask(method,params={},timeout=30000){return new Promise((resolve,reject)=>{const id=++seq;const timer=setTimeout(()=>{pending.delete(id);reject(new Error('BiDi timeout: '+method))},timeout);pending.set(id,{resolve,reject,timer});socket.send(JSON.stringify({id,method,params}));});}
 async function evaluate(expression,timeout=30000){const result=await ask('script.evaluate',{expression,target:{context},awaitPromise:true},timeout);if(result.type==='exception')throw new Error(JSON.stringify(result));return result.result?.value;}
@@ -388,7 +386,7 @@ try{
   }finally{if(preload)await ask('script.removePreloadScript',{script:preload});await ask('browsingContext.close',{context});context=mainContext;await ask('browser.removeUserContext',{userContext:isolated});}
  }else report.unsupported.push({probe:'native theme disclosure and storage failure',reason:'Intentionally absent enhancement when page JavaScript is disabled; hidden control and OS theme tested on every route.'});
  // Traverse every original source anchor in the actual rendered document.
- const sources=JSON.parse(fs.readFileSync(path.join(root,'source/source-manifest.json'),'utf8'));
+ const sources=JSON.parse(fs.readFileSync(path.join(root,'provenance/source-manifest.json'),'utf8'));
  await ask('browsingContext.setViewport',{context,viewport:{width:390,height:1120},devicePixelRatio:1});
  for(const source of sources){for(const anchor of source.anchors){scenario='anchor:'+source.name+'#'+anchor;await ask('browsingContext.navigate',{context,url:base+source.name+'.html#'+encodeURIComponent(anchor),wait:'complete'});await ready();const exists=await evaluate(`Boolean(document.getElementById(${JSON.stringify(anchor)}))`);if(!exists)throw new Error('Missing source anchor '+anchor);report.anchors.push({page:source.name,anchor,exists});}}
  for(const [route,anchor,label] of [['charter.html','open-web-manifesto','manifesto'],['membership-process.html','prepare-application-materials','application-materials']]){
@@ -405,7 +403,7 @@ try{
  await ready();report.deep404Recovery=true;
  // Test real font request failures without changing production CSS.
  if(!noJS){scenario='font-failure';denyFonts=true;const {userContext}=await ask('browser.createUserContext',{});({context}=await ask('browsingContext.create',{type:'tab',userContext}));await ask('browsingContext.setViewport',{context,viewport:{width:390,height:1120},devicePixelRatio:1});await ask('browsingContext.navigate',{context,url:base+'index.html?fontfailure=1',wait:'complete'});await ready();const fallback=JSON.parse(await evaluate(`JSON.stringify({overflow:document.documentElement.scrollWidth>innerWidth,h1:document.querySelector('h1').textContent.replace(/\\s+/g,' ').trim(),loaded:[...document.fonts].filter(f=>f.status==='loaded').length})`));if(deniedFonts<3||fallback.overflow||fallback.loaded)throw new Error('Font failure test incomplete '+JSON.stringify(fallback));report.fontFailure={...fallback,failedFontRequests:deniedFonts};denyFonts=false;}
- const errorLogs=events.filter(e=>e.method==='log.entryAdded'&&e.params.type==='javascript'&&e.params.level==='error').map(e=>({scenario:e.scenario,text:e.params.text}));
+ const errorLogs=events.filter(e=>e.method==='log.entryAdded'&&e.params.type==='javascript'&&e.params.level==='error').map(e=>({scenario:e.scenario,text:e.params.text,source:e.params.source,stackTrace:e.params.stackTrace}));
  report.expectedFontFailureErrors=errorLogs.filter(e=>e.scenario==='font-failure'&&e.text.startsWith('downloadable font: download failed')&&e.text.includes(base+'assets/fonts/'));
  report.expectedThemeFailureErrors=errorLogs.filter(e=>e.scenario==='theme-script-failure'&&/^Loading failed for the <script>/.test(e.text)&&[...themeScriptPaths].some(p=>e.text.includes(new URL(base).origin+p)));
  report.pageErrors=errorLogs.filter(e=>!report.expectedFontFailureErrors.includes(e)&&!report.expectedThemeFailureErrors.includes(e));

@@ -1,6 +1,6 @@
-@font-face{font-family:"Newsreader";src:url("fonts/newsreader-regular.52f54c34206c.woff2") format("woff2");font-style:normal;font-weight:200 800;font-display:swap}
-@font-face{font-family:"Newsreader";src:url("fonts/newsreader-italic.8920f06c4c11.woff2") format("woff2");font-style:italic;font-weight:200 800;font-display:swap}
-@font-face{font-family:"Public Sans";src:url("fonts/public-sans.82d45c7f758c.woff2") format("woff2");font-style:normal;font-weight:100 900;font-display:swap}
+@font-face{font-family:"Newsreader";src:url("fonts/newsreader-regular.woff2") format("woff2");font-style:normal;font-weight:200 800;font-display:swap}
+@font-face{font-family:"Newsreader";src:url("fonts/newsreader-italic.woff2") format("woff2");font-style:italic;font-weight:200 800;font-display:swap}
+@font-face{font-family:"Public Sans";src:url("fonts/public-sans.woff2") format("woff2");font-style:normal;font-weight:100 900;font-display:swap}
 /* Porcelain & Ink. All visible text is at least 1rem; browser zoom is unrestricted. */
 :root { color-scheme:light; --paper:#F5F7FA; --ink:#202D3C; --muted:#536377; --rule:#CCD5E0; --accent:#294A70; --control:#5C7290; --button-ink:#FFFFFF; --hover:#E3EAF2; --logo-paper:transparent; --serif:"Newsreader"; --sans:"Public Sans"; }
 :root[data-theme="dark"] { color-scheme:dark; --paper:#111A24; --ink:#E8EEF5; --muted:#ACBCCF; --rule:#35475C; --accent:#95BCE8; --control:#8199B4; --button-ink:#111A24; --hover:#26384B; --logo-paper:#F5F7FA; }
