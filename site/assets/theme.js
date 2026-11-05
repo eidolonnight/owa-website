@@ -1,4 +1,4 @@
-/* Optional preference enhancement. CSS alone follows the operating system. */
+/* Optional theme and footer enhancements. CSS alone follows the operating system. */
 (() => {
   'use strict';
   const key = 'owa-color-theme';
@@ -14,7 +14,16 @@
     document.querySelectorAll('source[data-dark-logo], source[data-dark-art]').forEach(source => { source.media = media; });
   };
   apply(preference);
+  const updateCopyrightYear = () => {
+    const year = String(new Date().getFullYear());
+    document.querySelectorAll('[data-copyright-year]').forEach(element => { element.textContent = year; });
+  };
+  window.addEventListener('pageshow', updateCopyrightYear);
+  document.addEventListener('visibilitychange', () => {
+    if (document.visibilityState === 'visible') updateCopyrightYear();
+  });
   document.addEventListener('DOMContentLoaded', () => {
+    updateCopyrightYear();
     const control = document.querySelector('.theme-control');
     const trigger = document.getElementById('theme-mode');
     const panel = document.getElementById('theme-options');

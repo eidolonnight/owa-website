@@ -8,24 +8,24 @@ This grant covers original contributions in these files, not material supplied b
 
 | Files | Covered material |
 | --- | --- |
-| `site/assets/*.css`, `site/assets/theme.js` | Original stylesheet and theme-control code. |
-| `site/*.html` | Original layout/control markup only; copied text, names, marks and embedded artwork retain their separate rights. |
-| `tests/browser-qa.mjs` | Original optional browser-verification code. |
+| `site/assets/*.css`, `site/assets/theme.js` | Original stylesheet, theme-control, and footer-year code. |
+| `site/*.html` | Original layout/control markup only; Alliance text, names, marks and embedded artwork retain their separate rights. |
+| `tests/*.mjs` | Original optional verification code. |
 | `.github/workflows/pages.yml`, `.gitignore` | Original repository/deployment configuration, not the external tools it refers to. |
 
 The same license applies to original contributor documentation in `README.md`, `CONTRIBUTING.md`, `PALETTE.md`, `palette.html`, `tests/README.md`, `test-assets/README.md`, and this file. Quoted third-party notices retain their own terms. Copyright remains with the respective contributors or other rights holders; this notice does not assert an assignment to the Alliance or its members.
 
 The covered work is distributed without any warranty, including the implied warranties of merchantability or fitness for a particular purpose. See the GPL for details.
 
-The website retains the licenses and rights of its ingredients. The code license does not relicense copied prose, fonts, logos or other inputs. Editorial news text, copied homepage text, and other content not expressly included above are outside this code grant. No additional rights are asserted here over names, dates, URLs or other factual metadata.
+The website retains the licenses and rights of its ingredients. The code license does not relicense Alliance prose, fonts, logos or other inputs. Editorial news text, homepage text, and other content not expressly included above are outside this code grant. No additional rights are asserted here over names, dates, URLs or other factual metadata.
 
 ## Alliance content and logos
 
-Alliance content comes from the [upstream OWA website](https://github.com/Open-Website-Alliance/website). Its retained footer states: "© 2025 by the Open Website Alliance and its members".
+Alliance content is copyright the Open Website Alliance and its members.
 
-The copied Charter/Open Web Manifesto, membership and privacy documents, homepage text, and OWA logo are not covered by the code grant. This repository supplies no general content or logo reuse license. Preserve existing notices and confirm that the relevant rights holder's authorization covers your intended copying, adaptation and redistribution; an exclusion from the code license is not permission to redistribute.
+The Charter/Open Web Manifesto, membership and privacy documents, homepage text, and OWA logo are not covered by the code grant. This repository supplies no general content or logo reuse license. Preserve existing notices and confirm that the relevant rights holder's authorization covers your intended copying, adaptation and redistribution; an exclusion from the code license is not permission to redistribute.
 
-Member logos and their light/dark variants are in `site/images/logos/`. The light variants come from the Alliance website. Dark-background artwork uses the official [Drupal logo archive](https://www.drupal.org/files/Drupal-Logos_0.zip), [Joomla! SVG](https://cdn.joomla.org/images/joomla-colours-logo.svg), [TYPO3 SVG](https://typo3.com/_assets/d1e01514e4c4a5b3147940fa2ec50682/Images/LogoWhite.svg?1791366674), and [WordPress white PNG](https://s.w.org/style/images/about/WordPress-logotype-standard-white.png). The WordPress PNG has only fully transparent outer canvas removed; painted pixels are unchanged, and CSS supplies the clear space. Other variants are unmodified. Associated policies include:
+Member logos and their light/dark variants are in `site/images/logos/`. Dark-background artwork uses the official [Drupal logo archive](https://www.drupal.org/files/Drupal-Logos_0.zip), [Joomla! SVG](https://cdn.joomla.org/images/joomla-colours-logo.svg), [TYPO3 SVG](https://typo3.com/_assets/d1e01514e4c4a5b3147940fa2ec50682/Images/LogoWhite.svg?1791366674), and [WordPress white PNG](https://s.w.org/style/images/about/WordPress-logotype-standard-white.png). The WordPress PNG has only fully transparent outer canvas removed; painted pixels are unchanged, and CSS supplies the clear space. Other variants are unmodified. Associated policies include:
 
 - [Drupal copyright and trademark policy](https://www.drupal.org/about/media-kit/copyright-and-trademark): copyright in the brand materials belongs to the Drupal Association; Drupal trademark ownership is distinct.
 - [Joomla! brand manual and limited-use logos](https://tm.joomla.org/brand-manual-and-limited-use-logos.html).

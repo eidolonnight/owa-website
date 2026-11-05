@@ -339,6 +339,8 @@ try{
    if(JSON.stringify(shared.words.map(w=>w.text))!==JSON.stringify(['Open','Website','Alliance'])||shared.words.some((w,i)=>i&&w.top<shared.words[i-1].bottom-1))throw new Error('Brand wordmark must have three distinct lines '+JSON.stringify(shared.words));
    if(shared.oldCopy||shared.badLinks.length||shared.hints!==1||!shared.hint)throw new Error('Shared copy/link contract '+JSON.stringify(shared));
    data.shared=shared;
+   data.copyright=JSON.parse(await evaluate(`JSON.stringify({years:[...document.querySelectorAll('footer [data-copyright-year]')].map(e=>e.textContent),currentYear:String(new Date().getFullYear())})`));
+   if(data.copyright.years.length!==1||data.copyright.years[0]!==data.copyright.currentYear)throw new Error('Footer copyright year is not current '+scenario);
    data.arrowLinks=JSON.parse(await evaluate(`JSON.stringify([...document.querySelectorAll('a[href]')].map(a=>{const nodes=[a,...a.querySelectorAll('*')],arrows=[a.textContent,...nodes.flatMap(e=>['::before','::after'].map(p=>getComputedStyle(e,p).content))].some(t=>/[↗↖↘↙]/.test(t));return {href:a.getAttribute('href'),arrows,hero:Boolean(a.closest('.hero')),external:/^https?:$/.test(a.protocol)&&a.origin!==location.origin}}).filter(a=>a.arrows))`));
    if(data.arrowLinks.some(a=>!a.external||a.hero))throw new Error('Diagonal arrow shown on non-external or hero link '+JSON.stringify(data.arrowLinks));
    if(await evaluate(`Boolean([...document.querySelectorAll('.hero a,.hero a *')].some(e=>[e.textContent,getComputedStyle(e,'::before').content,getComputedStyle(e,'::after').content].some(t=>/[\u2190-\u21ff]/.test(t))))`))throw new Error('Arrow shown in hero link');

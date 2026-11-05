@@ -1,19 +1,19 @@
 # Member-derived color palette
 
-A charcoal foundation with cyan, green, and orange accents. This is the palette used by this website redesign, not an official Alliance-wide brand standard.
+A charcoal foundation with cyan, green, and orange accents. This is the palette used by this website, not an official Alliance-wide brand standard.
 
 Open the [visual palette board](palette.html) in a browser. The reusable [CSS tokens](site/assets/palette.css) are imported by [the site stylesheet](site/assets/site.css); there is no build step.
 
 ## Member colors
 
-The four colors are sampled from the member artwork on the Alliance website:
+The four colors are sampled from the member logos in `site/images/logos/`:
 
 | Member | Color | Token | Source |
 | --- | --- | --- | --- |
-| Drupal | `#009CDE` cyan | `--owa-drupal` | [Source logo](https://openwebsitealliance.org/images/logos/drupal.svg) |
-| Joomla! | `#7AC143` green | `--owa-joomla` | [Source logo](https://openwebsitealliance.org/images/logos/joomla.svg) |
-| TYPO3 | `#FF8700` orange | `--owa-typo3` | [Source logo](https://openwebsitealliance.org/images/logos/typo3.svg) |
-| WordPress | `#32373C` charcoal | `--owa-wordpress` | [Source logo](https://openwebsitealliance.org/images/logos/wordpress.svg) |
+| Drupal | `#009CDE` cyan | `--owa-drupal` | [Source logo](site/images/logos/drupal.svg) |
+| Joomla! | `#7AC143` green | `--owa-joomla` | [Source logo](site/images/logos/joomla.svg) |
+| TYPO3 | `#FF8700` orange | `--owa-typo3` | [Source logo](site/images/logos/typo3.svg) |
+| WordPress | `#32373C` charcoal | `--owa-wordpress` | [Source logo](site/images/logos/wordpress.svg) |
 
 Joomla! contributes one of its existing logo colors; its full multicolor logo is unchanged. WordPress contributes the charcoal in its artwork instead of another blue. Official light/dark logo variants, original asset bytes, and equal member standing are preserved. Colors do not replace member names or accessible labels.
 

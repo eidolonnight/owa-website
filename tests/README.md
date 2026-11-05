@@ -1,4 +1,10 @@
-# Browser checks
+# Website checks
+
+## Footer year
+
+With Node.js installed, run `node --test tests/footer-year.test.mjs`. This checks all five HTML fallback years and their script versions, then exercises current/future years and cached/background-page restoration with a controlled clock. The static fallback must be updated each year for visitors without JavaScript.
+
+## Browser checks
 
 Requirements: Node.js 22 or later and Firefox with WebDriver BiDi. Set `FIREFOX_BIN` if Firefox is not at `/usr/bin/firefox`.
 
@@ -6,13 +12,14 @@ From the repository root:
 
 ```sh
 node --check site/assets/theme.js
+node --test tests/footer-year.test.mjs
 node tests/browser-qa.mjs
 node tests/browser-qa.mjs --dark
 node tests/browser-qa.mjs --no-js
 node tests/browser-qa.mjs --no-js --dark
 ```
 
-The suite serves `site/` at `/owa-website/`, checks its inventory before and after testing, and never changes website files. Coverage includes routes, keyboard/pointer navigation, document anchors, social-profile order, Drupal Association-only accounts, five-icon row limits, the hero's Charter/News actions and single named foundation Manifesto link, inline secondary coverage labels with natural source-link wrapping, themes, logo variants, fonts/images, text reflow, readability, and deep-404 recovery. Expected profiles, logos, and anchors are in [`fixtures.json`](fixtures.json); update them when deliberately changing the site.
+The suite serves `site/` at `/owa-website/`, checks its inventory before and after testing, and never changes website files. Coverage includes current footer years on every page with and without JavaScript, routes, keyboard/pointer navigation, document anchors, social-profile order, Drupal Association-only accounts, five-icon row limits, the hero's Charter/News actions and single named foundation Manifesto link, inline secondary coverage labels with natural source-link wrapping, themes, logo variants, fonts/images, text reflow, readability, and deep-404 recovery. Expected profiles, logos, and anchors are in [`fixtures.json`](fixtures.json); update them when deliberately changing the site.
 
 Every run also checks forward/reverse sidebar focus at short viewport heights and with enlarged text. JavaScript-enabled runs test all five theme menus at 320px with text enlargement, text spacing, both combined, and a short 256px viewport, including label geometry, complete focus outlines, and Escape/visible-focus restoration. Run only these focused regressions with `node tests/browser-qa.mjs --focus-regressions`; it also accepts `--dark` and `--no-js`. These CSSOM enlargement and viewport fixtures do not substitute for native browser-zoom testing.
 

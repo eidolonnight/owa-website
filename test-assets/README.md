@@ -14,4 +14,4 @@ See [the repository's license scope and third-party notices](../THIRD_PARTY_NOTI
 
 ## Test-only scope
 
-This directory is outside the `site/` upload. It is used only by the optional `tests/browser-qa.mjs` suite, is not a runtime dependency, and must never be copied into `site/`. Sharing the source repository still redistributes the test bundle and its notices.
+This directory is outside the `site/` upload. The optional `tests/browser-qa.mjs` suite verifies the bundle checksum, injects it into its Firefox test pages, and calls `axe.run()` to check supported WCAG A/AA rules and accessibility best practices. The bundle is not a runtime dependency, is not requested by website visitors, and must never be copied into `site/`. Sharing the source repository still redistributes the test bundle and its notices.
